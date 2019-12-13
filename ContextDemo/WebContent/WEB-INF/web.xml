@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ContextDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>DemoServlet1</display-name>
+    <servlet-name>DemoServlet1</servlet-name>
+    <servlet-class>com.hcl.demo.DemoServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DemoServlet1</servlet-name>
+    <url-pattern>/DemoServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DemoServlet1</display-name>
+     <servlet-name>DemoServlet1</servlet-name>
+    <servlet-class>com.hcl.demo.DemoServlet1</servlet-class>
+    <init-param>
+      <description></description>
+      <param-name>course</param-name>
+      <param-value>java</param-value>
+    </init-param>
+    <init-param>
+      <description></description>
+      <param-name>venue</param-name>
+      <param-value>bluelotus</param-value>
+    </init-param>
+    <init-param>
+      <description></description>
+      <param-name>company</param-name>
+      <param-value>hcl</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DemoServlet1</servlet-name>
+    <url-pattern>/DemoServlet1</url-pattern>
+  </servlet-mapping>
+</web-app>
